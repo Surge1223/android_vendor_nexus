@@ -25,13 +25,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PureNexusSettings \
     LockClock \
-    WallpaperPicker
+    WallpaperPicker \
+    Browser
 
 # Busybox
 PRODUCT_PACKAGES += \
-    Busybox
+    Busybox \
+    bbx
 
 # SuperSU FTW
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/nexus/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+    vendor/nexus/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/nexus/prebuilt/etc/init.d/92permissive:system/etc/init.d/92permissive
